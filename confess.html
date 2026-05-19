@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="assets/icon.png">
+        <title>Will you be mine?</title>
+        <link rel="icon" type="image/png" href="assets/icon.png">
+        <link rel="stylesheet" href="styles/confess.css">
+    </head>
+    <body>
+        <canvas id="heart" aria-hidden="true"></canvas>
+        <div class="container">
+            <div class="gif_strip">
+                <img src="assets/icon.png" class="gif_icon" alt="icon">
+                <div class="gif_container">
+                    <img src="https://public.youware.com/image/78760c58-ee47-4dce-b632-cd62ba4099f7/affgxx5ysl.gif" alt="Cute GIF">
+                </div>
+                <img src="assets/icon.png" class="gif_icon" alt="icon">
+            </div>
+            <h3>So… would you let me be the person who stays by your side?</h3>
+            <h1>Will you be mine?</h1>
+            <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
+            </div>
+        </div>
+
+        <audio id="clickSound">
+            <source src="https://public.youware.com/users-website-assets/prod/06f02491-b6fe-43bd-82b4-8b0add34ed70/Button-SoundBible.com-1420500901.mp3" type="audio/mp3">
+        </audio>
+
+        <script src="script/love.js"></script>
+        <script src="script/confess.js"></script>
+    </body>
+</html>

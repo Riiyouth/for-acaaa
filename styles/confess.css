@@ -1,0 +1,24 @@
+/* Styles for confess.html to match target layout */
+html,body{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff;overflow:hidden}
+#heart{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0;pointer-events:none}
+.container{position:relative;z-index:1;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:24px;padding:24px;text-align:center}
+
+.gif_strip{display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap}
+.gif_icon{width:200px;height:200px;object-fit:contain;background:transparent;border-radius:0;box-shadow:none;flex:0 0 auto;display:block}
+
+@media (max-width:600px){
+	.gif_icon{width:108px;height:108px}
+}
+.gif_container img{width:180px;height:auto;border-radius:12px}
+h1{font-size:48px;margin:0;color:#ff748e;text-shadow:0 2px 6px rgb(0, 0, 0)}
+h3{font-size:24px;margin:0;color:#ff748e;text-shadow:0 1px 3px rgb(0, 0, 0, 0.2)}
+.buttons{display:flex;gap:18px;align-items:center}
+.yes-button{background:#ff4d6d;color:#fff;border:none;padding:18px 36px;border-radius:12px;font-size:54px;cursor:pointer;box-shadow:0 8px 20px rgba(255,77,109,0.2);transition:transform .15s ease}
+.yes-button:active{transform:scale(.98)}
+.no-button{background:wheat;color:#333;border:2px solid #000000;padding:12px 18px;border-radius:12px;font-size:18px;cursor:pointer}
+
+@media (max-width:600px){h1{font-size:32px}.yes-button{font-size:36px;padding:12px 24px}}
+
+/* watermark */
+#yw-watermark{position:fixed;bottom:16px;right:16px;z-index:2147483647;display:flex;align-items:center;height:36px;padding:0 12px;background:#FFFCF5;border-radius:9999px;border:1px solid rgba(0,0,0,0.05);box-shadow:0 6px 12px rgba(133,124,111,0.05)}
+#yw-watermark img{height:20px;margin-left:6px}

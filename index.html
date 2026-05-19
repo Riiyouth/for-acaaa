@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for acaaa ❤️</title>
+    <link rel="icon" type="image/x-icon" href="assets/icon.png">
+    <link rel="stylesheet" href="styles/main.css">
+    <div class="wallpaper"></div>
+    <div class="content">
+    </div>
+</head>
+<body>
+    <div class="bg_heart">
+        <div class="message"></div>
+        <div class="letter-panel" aria-hidden="true">
+            <button class="envelope" type="button" aria-label="Buka surat">
+                <span class="envelope-flap"></span>
+                <span class="envelope-body"></span>
+                <span class="letter">
+                    <span class="letter-title">Special for acaaa</span>
+                    <span class="letter-text">Okay, so… I’m not really good at putting feelings into words, jadi kalau nanti agak berantakan just bear with me 😭
+
+But honestly, meeting you feels different.
+
+Walaupun kita baru kenal belum selama itu, I feel like we clicked so naturally. No awkwardness, no forcing conversations, no pressure to always say the right thing. Everything just flows with you, and somehow you make me feel comfortable in a way that’s really rare for me.
+
+And the more we talk, the more I realize that I genuinely care about you. Like… a lot.
+
+I like your presence, your energy, the way you make my days feel lighter without even trying.
+It’s crazy because usually I take time to open up to people, but with you? it feels easy. Too easy, actually 😭
+
+At this point kita juga udah saling sayang sayangan, perhatian, flirting every day like a couple already 😼
+So I kinda thought… why not make it official then?
+
+No pressure, no cheesy dramatic stuff, I just want you to know that my feelings for you are real.
+soo coba deh pencet tombol dibawah ini, i want to tell u one more thing
+</span>
+                </span>
+            </button>
+            <a href="confess.html" class="next-button">pencettt akuuuu</a>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script/main.js"></script>
+    <script>
+        function setupMusic() {
+            const music = document.getElementById('backgroundMusic');
+            
+            const isMusicPlaying = localStorage.getItem('musicPlaying') === 'true';
+            const musicCurrentTime = localStorage.getItem('musicCurrentTime') || 0;
+
+            if (isMusicPlaying) {
+                music.currentTime = parseFloat(musicCurrentTime);
+            }
+
+            music.addEventListener('play', () => {
+                localStorage.setItem('musicPlaying', 'true');
+            });
+
+            music.addEventListener('pause', () => {
+                localStorage.setItem('musicPlaying', 'false');
+            });
+
+            setInterval(() => {
+                localStorage.setItem('musicCurrentTime', music.currentTime);
+            }, 1000);
+
+            document.addEventListener('click', function startMusic() {
+                music.play().catch(error => {
+                    console.log('Autoplay prevented', error);
+                });
+                document.removeEventListener('click', startMusic);
+            });
+        }
+
+            document.addEventListener('DOMContentLoaded', setupMusic);
+    </script>
+
+    <audio id="backgroundMusic" loop>
+        <source src="assets/song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+
+</html>
+
